@@ -41,6 +41,7 @@ version = '.'.join(release.split('.')[:3])
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx_search.extension',
@@ -53,6 +54,9 @@ root_doc = 'index'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 html_last_updated_fmt = ''
+
+# Extensions
+autosectionlabel_prefix_document = True
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

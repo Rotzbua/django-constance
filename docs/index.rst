@@ -17,7 +17,7 @@ Quick Installation
     pip install "django-constance[redis]"
 
 For complete installation instructions, including how to install the
-database backend, see :ref:`Backends <backends>`.
+database backend, see :ref:`Backends <backends:backends>`.
 
 Configuration
 -------------
@@ -54,7 +54,7 @@ Here, ``42`` is the default value for the key ``THE_ANSWER`` if it is
 not found in the backend. The other member of the tuple is a help text the
 admin will show.
 
-See the :ref:`Backends <backends>` section how to setup the backend and
+See the :ref:`Backends <backends:backends>` section how to setup the backend and
 finish the configuration.
 
 ``django-constance``'s hashes generated in different instances of the same
@@ -65,7 +65,7 @@ verification.
 
 .. code-block:: python
 
-    CONSTANCE_IGNORE_ADMIN_VERSION_CHECK = True
+   CONSTANCE_IGNORE_ADMIN_VERSION_CHECK = True
 
 
 Signals

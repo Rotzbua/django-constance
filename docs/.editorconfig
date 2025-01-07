@@ -1,0 +1,3 @@
+# RST files (used by sphinx)
+[*.rst]
+indent_size = 3
